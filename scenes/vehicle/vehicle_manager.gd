@@ -59,10 +59,6 @@ func spawn_vehicle() -> void:
 	var speed := randf_range(min_speed, max_speed)
 	new_vehicle.set_meta("speed", speed)
 	
-	# 随机翻转增加多样性
-	if randf() > 0.5:
-		new_vehicle.flip_h = true
-	
 	add_child(new_vehicle)
 	active_vehicles.append(new_vehicle)
 	
