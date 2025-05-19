@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://brsedbjwqprhw"]
+
+[ext_resource type="Script" uid="uid://cikfy3yrtjjal" path="res://scenes/vehicle/vehicle_manager.gd" id="1_2aqt4"]
+
+[node name="VehicleManager" type="Node"]
+script = ExtResource("1_2aqt4")
+
+[node name="SpawnTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

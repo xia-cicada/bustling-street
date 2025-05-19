@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://du4xh48cwd1mr"]
+
+[ext_resource type="Script" uid="uid://dhc26fapyhsg0" path="res://scenes/world/world.gd" id="1_dphjl"]
+[ext_resource type="PackedScene" uid="uid://brsedbjwqprhw" path="res://scenes/vehicle/vehicle_manager.tscn" id="2_sl2e5"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_dphjl")
+
+[node name="VehicleManager" parent="." instance=ExtResource("2_sl2e5")]
